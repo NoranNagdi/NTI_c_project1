@@ -1,1 +1,1 @@
-# NTI_c_project1
+# NTI_c_projects
