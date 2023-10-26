@@ -1,0 +1,50 @@
+11:01:13 **** Rebuild of configuration Debug for project C_project_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\validation.o" "..\\src\\validation.c" 
+..\src\validation.c: In function 'validatePassword':
+..\src\validation.c:17:17: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   17 |                 printf("please enter name and password\n");
+      |                 ^~~~~~
+..\src\validation.c:1:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+  +++ |+#include <stdio.h>
+    1 | /*
+..\src\validation.c:17:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   17 |                 printf("please enter name and password\n");
+      |                 ^~~~~~
+..\src\validation.c:17:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\validation.c:18:17: warning: implicit declaration of function 'gets' [-Wimplicit-function-declaration]
+   18 |                 gets(name);
+      |                 ^~~~
+..\src\validation.c:20:22: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+   20 |                 if(!(strcmp(name,"nora")&& strcmp(pass,"1111")))
+      |                      ^~~~~~
+..\src\validation.c:1:1: note: include '<string.h>' or provide a declaration of 'strcmp'
+  +++ |+#include <string.h>
+    1 | /*
+..\src\validation.c: In function 'displayMainMenu':
+..\src\validation.c:37:9: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+   37 |         puts("please choose an option");
+      |         ^~~~
+..\src\validation.c:37:9: note: include '<stdio.h>' or provide a declaration of 'puts'
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\array.o" "..\\src\\array.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function 'main':
+..\src\main.c:21:12: warning: implicit declaration of function 'validatePassword' [-Wimplicit-function-declaration]
+   21 |         if(validatePassword())
+      |            ^~~~~~~~~~~~~~~~
+..\src\main.c:25:25: warning: implicit declaration of function 'displayMainMenu' [-Wimplicit-function-declaration]
+   25 |                         displayMainMenu();
+      |                         ^~~~~~~~~~~~~~~
+..\src\main.c:31:33: warning: implicit declaration of function 'calculator' [-Wimplicit-function-declaration]
+   31 |                                 calculator();
+      |                                 ^~~~~~~~~~
+..\src\main.c:35:33: warning: implicit declaration of function 'playwitharray' [-Wimplicit-function-declaration]
+   35 |                                 playwitharray();
+      |                                 ^~~~~~~~~~~~~
+..\src\main.c:39:33: warning: implicit declaration of function 'playwithpointers' [-Wimplicit-function-declaration]
+   39 |                                 playwithpointers();
+      |                                 ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc.o" "..\\src\\calc.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointers.o" "..\\src\\pointers.c" 
+gcc -o C_project_1.exe "src\\array.o" "src\\calc.o" "src\\main.o" "src\\pointers.o" "src\\validation.o" 
+Info: Nothing to build for C_project_1
