@@ -1,0 +1,25 @@
+11:05:49 **** Incremental Build of configuration Debug for project simple_database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main .o" "..\\src\\main .c" 
+..\src\main .c: In function 'main':
+..\src\main .c:31:17: warning: implicit declaration of function 'menu' [-Wimplicit-function-declaration]
+   31 |                 menu();
+      |                 ^~~~
+..\src\main .c:36:25: warning: implicit declaration of function 'scaninfo'; did you mean 'scanf'? [-Wimplicit-function-declaration]
+   36 |                         scaninfo(emp);
+      |                         ^~~~~~~~
+      |                         scanf
+..\src\main .c:40:25: warning: implicit declaration of function 'printinfo'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   40 |                         printinfo(emp);
+      |                         ^~~~~~~~~
+      |                         printf
+..\src\main .c:44:25: warning: implicit declaration of function 'laregest_salary' [-Wimplicit-function-declaration]
+   44 |                         laregest_salary(emp);
+      |                         ^~~~~~~~~~~~~~~
+..\src\main .c:49:25: warning: implicit declaration of function 'search_by_ID' [-Wimplicit-function-declaration]
+   49 |                         search_by_ID(emp);
+      |                         ^~~~~~~~~~~~
+gcc -o simple_database.exe "src\\database.o" "src\\main .o" 
+
+11:05:49 Build Finished. 0 errors, 5 warnings. (took 481ms)
+
